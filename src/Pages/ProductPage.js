@@ -22,7 +22,7 @@ const ProductPage = (props) => {
   const [color, setColor] = useState("#fc6");
   const [review, setReview] = useState("");
   const { productid } = useParams();
-  const [loading, setLoading] = useState();
+  const [loading, setLoading] = useState(true);
   const reviewsCollectionRef = collection(db, "reviews");
 
   useEffect(() => {
