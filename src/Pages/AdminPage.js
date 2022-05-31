@@ -14,7 +14,7 @@ const AdminPage = () => {
     }
 
     const getAllUsers = () => {
-      fetch(`http://localhost:3010/users`)
+      fetch(`https://intense-chamber-10541.herokuapp.com/user/users`)
         .then((res) => res.json())
         .then((json) => setUsers(json.data));
     };

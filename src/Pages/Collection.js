@@ -27,7 +27,7 @@ const Collection = (props) => {
   useEffect(() => {
     setLoading(true);
     function getCollection() {
-      fetch(`http://localhost:3010/collection/${collectionId}`)
+      fetch(`https://intense-chamber-10541.herokuapp.com/collection/${collectionId}`)
         .then((res) => res.json())
         .then((data) => setCollection(data.data));
     }

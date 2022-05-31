@@ -39,7 +39,7 @@ const Dashboard = () => {
     };
 
     const getCollections2 = async () => {
-      fetch(`http://localhost:3010/collection/${user.data.id}/collections`)
+      fetch(`https://intense-chamber-10541.herokuapp.com/collection/${user.data.id}/collections`)
         .then((res) => res.json())
         .then((data) => setCollections(data.data));
     };

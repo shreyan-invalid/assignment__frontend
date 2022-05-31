@@ -44,7 +44,7 @@ function Form({ inputs, formType }) {
         alert("Please fill all the fields");
         return;
       }
-      fetch("http://localhost:3010/collection/postCollection", {
+      fetch("https://intense-chamber-10541.herokuapp.com/collection/postCollection", {
         method: "POST",
         headers: {
           "Content-Type": "application/x-www-form-urlencoded",
@@ -73,7 +73,7 @@ function Form({ inputs, formType }) {
         alert("Please fill all the fields");
         return;
       }
-      fetch("http://localhost:3010/login", {
+      fetch("https://intense-chamber-10541.herokuapp.com/user/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/x-www-form-urlencoded",
@@ -98,7 +98,7 @@ function Form({ inputs, formType }) {
       }
       console.log(email, password, confirmPassword, name);
       if (password === confirmPassword) {
-        fetch("http://localhost:3010/signup", {
+        fetch("https://intense-chamber-10541.herokuapp.com/user/signup", {
           method: "POST",
           headers: {
             "Content-Type": "application/x-www-form-urlencoded",

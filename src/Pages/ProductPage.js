@@ -41,7 +41,7 @@ const ProductPage = (props) => {
     };
 
     const getReview2 = async () => {
-      fetch(`http://localhost:3010/review/getReview/${productid}`)
+      fetch(`https://intense-chamber-10541.herokuapp.com/review/getReview/${productid}`)
         .then((res) => res.json())
         .then((json) => setProductReviews(json.data));
     };
@@ -81,7 +81,7 @@ const ProductPage = (props) => {
           alert("Please fill all the fields");
           return;
         }
-        fetch(`http://localhost:3010/review/postReview`, {
+        fetch(`https://intense-chamber-10541.herokuapp.com/review/postReview`, {
           method: "POST",
           headers: {
             "Content-Type": "application/x-www-form-urlencoded",

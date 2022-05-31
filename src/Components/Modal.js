@@ -31,7 +31,7 @@ const Model = ({ product }) => {
     };
 
     const getCollections2 = async () => {
-      fetch(`http://localhost:3010/collection/${user.data.id}/collections`)
+      fetch(`https://intense-chamber-10541.herokuapp.com/collection/${user.data.id}/collections`)
         .then((res) => res.json())
         .then((data) => setCollections(data.data));
     };
@@ -43,7 +43,7 @@ const Model = ({ product }) => {
     try {
       // await addDoc(collectionCollectionRef, { title: title, image: imageURL, description: description, date: Date.now(), userId: user.data.id, userEmail: user.data.email, products: []});
       e.preventDefault();
-      fetch(`http://localhost:3010/collection/update/${collectionId}`, {
+      fetch(`https://intense-chamber-10541.herokuapp.com/collection/update/${collectionId}`, {
         method: "POST",
         headers: {
           "Content-Type": "application/x-www-form-urlencoded",

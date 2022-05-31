@@ -18,6 +18,7 @@ import NewCollection from "./Components/NewCollection";
 import Collection from "./Pages/Collection";
 import AdminPage from "./Pages/AdminPage";
 import Loader from "./Components/Loader/Loader";
+import ErrorPage from "./Pages/ErrorPage";
 
 function App() {
   const dispatch = useDispatch();
@@ -81,6 +82,7 @@ function App() {
               path="/adminPage"
               element={<Layout children={<AdminPage />} />}
             ></Route>
+            <Route path="*" element={<Layout children={<ErrorPage />} />} />
           </Routes>
         </Router>
       </>
