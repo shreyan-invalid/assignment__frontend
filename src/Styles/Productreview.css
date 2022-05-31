@@ -1,0 +1,23 @@
+.review{
+    margin: 50px 0px;
+}
+
+.review__upperDetails > h2{
+    font-size: 25px;
+    color: black;
+}
+
+.review__upperDetails > p{
+    font-size: 20px;
+    color: gray;
+    margin: 0px;
+}
+
+.review__lowerDetails{
+    margin: 20px 0px 0px 0px;
+}
+
+.review__lowerDetails > p{
+    font-size: 20px;
+    color: black;
+}

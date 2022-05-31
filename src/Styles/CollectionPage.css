@@ -1,0 +1,21 @@
+.collectionPage {
+    width: 100%;
+    margin-top: 5rem;
+}
+
+.collectionPage__title>h2,
+.collectionPage__title>p {
+    color: black;
+}
+
+.collectionPage__title > button{
+    margin: 0px 0px 20px 0px;
+}
+
+.collectionPage__products{
+    margin: 1rem 0rem;
+}
+
+.collectionPage__products > h2{
+    color: black;
+}

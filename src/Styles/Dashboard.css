@@ -1,0 +1,31 @@
+.dashBoard{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.dashBoard__container{
+    width: 100%;
+}
+
+.dashBoard__title{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.dashBoard__title> h2{
+    color: black
+}
+
+.dashboard__collections{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.dashBoard__title> p{
+    color: black
+}

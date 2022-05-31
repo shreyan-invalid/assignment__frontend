@@ -1,0 +1,13 @@
+.newCollection{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    width: 90vw;
+    margin: 30px;
+}
+
+.mb-3{
+    width: min(80%, 80.5rem);
+}

@@ -1,0 +1,59 @@
+.loadingcontainer {
+    width: 220px;
+    height: 220px;
+    position: relative;
+    animation: spin 2s forwards infinite;
+    transform-origin: center center;
+}
+
+.box {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    animation: border 2s alternate infinite;
+    transform-origin: center center;
+}
+
+.box:nth-child(1) {
+    top: 25%;
+    left: 25%;
+    background-color: #fc7685;
+}
+
+.box:nth-child(2) {
+    top: 25%;
+    left: 50%;
+    background-color: #e5db4c;
+}
+
+.box:nth-child(3) {
+    top: 50%;
+    left: 25%;
+    background-color: #87a5e5;
+}
+
+.box:nth-child(4) {
+    top: 50%;
+    left: 50%;
+    background-color: #59cf03;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes border {
+    from {
+        border-radius: 0;
+    }
+
+    to {
+        border-radius: 50%;
+    }
+}

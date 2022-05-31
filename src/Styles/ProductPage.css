@@ -1,0 +1,132 @@
+
+.productPage{
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* background-color: rgb(152, 152, 206); */
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 10rem;
+}
+.productPage__Container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin: 0px 10px;
+}
+
+.form-label{
+    color: black
+}
+
+
+.productPage__right{
+    height:100%;
+    /* align-items: flex-start; */
+    display: flex;
+    flex-direction: column;
+    /* width: 50%; */
+}
+
+.productPage__left{
+    /* width:50%; */
+    height:100%;
+}
+.productPage__left > img{
+    height: 80%;
+    width: 90%;
+}
+
+.productPage__right__title{
+    /* align-self: flex-end; */
+}
+
+.productPage__right__title > h2{
+    color: black;
+    font-size: 3.0vw;
+    font-weight: 700;
+}
+
+.productPage__right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.productPage__right__description{
+    margin: 1vh 0px 0px 0px;
+}
+
+.productPage__right__description> p{
+    color: black;
+    font-size: 1.5vw;
+    margin: 0px;
+    /* font-weight: 700; */
+}
+.productPage__right__button{
+    margin: 3vh 0px 0px 0px;
+}
+
+.productPage__right__details> p{
+    font-size: 2.5vw;
+    color: black;
+}
+
+.productPage__right__ratings{
+    display: flex;
+    margin: 1vh 0px 0px 0px;
+    width: 100%;
+    align-items: flex-start;
+    justify-content:space-evenly;
+}
+
+.productPage__right__ratings> p{
+    font-size: 1.5vw;
+    color: black;
+}
+
+.productPage__right__details {
+    margin: 30px 0px 0px 0px;
+}
+
+.productPage__review{
+    width: 100%;
+    margin: 30px 0px 0px 0px;
+}
+
+.form-label{
+    font-size: 2.5vw;
+}
+
+
+@media screen and (max-width: 650px) {
+    .productPage__Container{
+        flex-direction: column;
+    }
+    .productPage__right__title > h2{
+        font-size: 3.5vw;
+    }
+
+    .productPage__right__details> p{
+        font-size: 2.5vw;
+    }
+
+
+    .productPage__right__description> p{
+        font-size: 2.5vw;
+    }
+
+    .productPage__right__ratings> p{
+        font-size: 2.5vw;
+    }
+
+    .productPage__right{
+        margin: 20px;
+    }
+}

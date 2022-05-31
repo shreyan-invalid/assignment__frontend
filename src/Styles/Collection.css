@@ -1,0 +1,51 @@
+.collection{
+    background-color: #373b69;
+    border-radius: 3px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    position: relative;
+    margin: 1rem;
+    /* width: 600px; */
+    border-radius: 30px;
+    width: min(400px, 90%);
+    max-height: 337.5px;
+    display: flex;
+}
+
+.collection__details{
+    background-color: #fff;
+    padding: 2rem;
+    position: absolute;
+    max-height: 100%;
+    overflow: auto;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transform: translateX(101%);
+    transition: transform 0.1s ease-in;
+}
+
+.collection:hover .collection__details{
+    transform: translateX(0);
+}
+
+.collection:hover{
+    margin-bottom: 10px;
+}
+
+.collection >img{
+    width: 100%;
+    /* width: 400px; */
+    width: min(300px, 400px);
+    height: 337.5px;
+    object-fit:contain;
+}
+
+
+.collection__details > h2{
+    color: black;
+}
+
+.collection__details > p{
+    color: black;
+}
